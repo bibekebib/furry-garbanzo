@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+    <title>To Do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="task-container">
+        <div class="form-wrapper">
+          <form action="" class="form">
+            <div class="input-section">
+              <input
+                type="text"
+                name=""
+                placeholder="Input Task..."
+                id="title"
+              />
+            </div>
+            <div class="submit-section">
+              <input type="submit" value="Submit" class="button" />
+            </div>
+          </form>
+        </div>
+        <div class="list-wrapper">
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{% static 'js/todo.js'%}"></script>
+</html>
